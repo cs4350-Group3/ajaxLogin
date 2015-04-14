@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PHP Login</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="formContainer">
+        <input class="texts" type="text" name="username" size="15" placeholder="username" required="required"/><br />
+        <input class="texts" type="password" name="password" size="15" placeholder="password" required="required"/><br />
+        <button id="trigger" class="btn reg">Register</button>
+        <button type="submit" class="btn">login</button>
+    </div>
+    <div id="modal" class="modal">
+        <button id="close" class="close">&times;</button>
+        <h2>Register</h2>
+        <div class="modal_form">
+            <input class="texts" type="text" name="username" size="15" placeholder="username" required="required"/><br />
+            <input class="texts" type="email" name="username" size="15" placeholder="E-Mail" required="required"/><br />
+            <input class="texts" type="password" name="password" size="15" placeholder="password" required="required"/><br />
+            <input class="texts" type="password" name="password" size="15" placeholder="password" required="required"/><br />
+            <button type="submit" class="register">Submit</button>
+        </div>
+    </div>
+    <div class="result"></div>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
