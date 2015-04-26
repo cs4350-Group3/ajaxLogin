@@ -9,18 +9,21 @@
 <body>
     <div class="formContainer">
         <input class="texts" type="text" name="username" size="15" placeholder="username" required="required"/><br />
-        <input class="texts" type="password" name="password" size="15" placeholder="password" required="required"/><br />
+        <input class="texts" type="password" id="password" name="password" size="15" placeholder="password" required="required"/><br />
         <button id="trigger" class="btn reg">Register</button>
-        <button type="submit" class="btn">login</button>
+        <button id="btn" type="submit" class="btn">login</button>
     </div>
     <div id="modal" class="modal">
         <button id="close" class="close">&times;</button>
         <h2>Register</h2>
         <div class="modal_form">
-            <input class="texts" type="text" name="username" size="15" placeholder="username" required="required"/><br />
-            <input class="texts" type="email" name="username" size="15" placeholder="E-Mail" required="required"/><br />
-            <input class="texts" type="password" name="password" size="15" placeholder="password" required="required"/><br />
-            <input class="texts" type="password" name="password" size="15" placeholder="password" required="required"/><br />
+            <input class="texts" type="text" id="regUName" name="username" size="15" placeholder="username" required="required"/><br />
+            <input class="texts" type="email" name="email" size="15" placeholder="email" required="required"/><br />
+            <input class="texts" type="text" name="fName" size="15" placeholder="first name" required="required"/><br />
+            <input class="texts" type="text" name="lName" size="15" placeholder="last name" required="required"/><br />
+            <input class="texts" type="text" name="twitter_username" size="15" placeholder="twitter name" required="required"/><br />
+            <input class="texts" type="password" id="regPWord" name="password" size="15" placeholder="password" required="required"/><br />
+            <input class="texts" type="password" name="passwordConfirm" size="15" placeholder="confirm password" required="required"/><br />
             <button type="submit" class="register">Submit</button>
         </div>
     </div>
