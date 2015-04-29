@@ -19,12 +19,17 @@ $(document).ready(function() {
         twitName = $("input[name='twitter_username']").val();
         var jsonRequestBody = '{"username": "' + uname + '", "email":"' + email + '", "fName":"' + fName + '", "lName":"' + lName + '", "password":"' + pword + '", "twitter_username":"' + twitName + '"}';
         postJson(jsonRequestBody, 'register');
+        modal.classList.remove('open');
+        document.body.removeChild(overlay);
+
     });
 
     function postJson(jsonRequestBody, endPoint) {
         $.post("http://localhost:8080/api/" + endPoint, jsonRequestBody).done(function(data) {
             var obj = jQuery.parseJSON(data);
-            $('.result').html("<h4>" + obj.message + ": " + obj.name + "</h4>")
+            if(endPoint!='register'){
+                $('.result').html("<h4>" + obj.message + ": " + obj.name + "</h4>")
+            }
             console.log("Data Loaded: " + data);
         });
     }
